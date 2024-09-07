@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function index(){
-        return view('backend.dashboard.index');
+        $template = 'backend.dashboard.home.index';
+        return view('backend.dashboard.layout', compact(
+            'template'
+        ));
     }
 }

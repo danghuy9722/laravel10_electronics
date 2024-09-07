@@ -50,6 +50,7 @@
                                 name="email"
                                 class="form-control" 
                                 placeholder="Email" 
+                                value=" {{ old('email') }} "
                             >
                             @if ($errors->has('email'))
                                 <span class="error-message">* {{ $errors -> first('email')}}</span>
